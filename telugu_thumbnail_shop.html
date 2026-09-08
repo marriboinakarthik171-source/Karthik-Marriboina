@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Telugu Thumbnail Shop</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#f4f5f9;color:#222}
+header{background:linear-gradient(135deg,#6a11cb,#2575fc);color:#fff;text-align:center;padding:55px 20px}
+header h1{font-size:42px;margin-bottom:12px} header p{font-size:18px}
+.price{display:inline-block;margin-top:20px;background:#fff;color:#6a11cb;padding:13px 25px;border-radius:30px;font-size:23px;font-weight:bold}
+.container{max-width:1100px;margin:auto;padding:40px 15px}
+.section-title{text-align:center;font-size:30px;margin-bottom:30px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #0002}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.card-content{padding:18px;text-align:center}
+.order-section{max-width:700px;margin:50px auto;background:#fff;padding:30px;border-radius:18px;box-shadow:0 5px 20px #0002}
+.order-section h2{text-align:center;margin-bottom:10px;font-size:30px}
+.order-description{text-align:center;color:#666;margin-bottom:25px}
+label{display:block;margin:16px 0 7px;font-weight:bold}
+input,select,textarea{width:100%;padding:13px;border:1px solid #ccc;border-radius:9px;font-size:16px;outline:none}
+textarea{min-height:110px;resize:vertical}
+.total{margin-top:22px;padding:15px;background:#f1edff;color:#5b12b8;border-radius:10px;text-align:center;font-size:22px;font-weight:bold}
+.whatsapp-btn{width:100%;border:0;margin-top:20px;padding:15px;border-radius:30px;background:#25D366;color:#fff;font-size:18px;font-weight:bold;cursor:pointer}
+.note{text-align:center;color:#777;font-size:13px;margin-top:12px}
+.services{margin-top:50px;background:#fff;border-radius:18px;padding:30px 20px;text-align:center;box-shadow:0 5px 18px #0001}
+.services ul{list-style:none;margin:20px 0}.services li{padding:8px;font-size:17px}
+.contact{margin-top:40px;background:#111;color:#fff;padding:45px 20px;text-align:center}
+.contact-btn{display:inline-block;margin-top:20px;background:#25D366;color:#fff;padding:14px 25px;border-radius:30px;font-size:18px;font-weight:bold}
+footer{background:#000;color:#aaa;text-align:center;padding:18px;font-size:14px}
+@media(max-width:600px){header h1{font-size:31px}.order-section{padding:22px 17px}}
+</style>
+</head>
+<body>
+<header>
+<h1>🎨 Telugu Thumbnail Shop</h1>
+<p>Professional YouTube Thumbnails for Telugu Creators</p>
+<div class="price">₹50 ONLY / Thumbnail</div>
+</header>
+
+<main class="container">
+<h2 class="section-title">🔥 Our Thumbnail Designs</h2>
+<div class="gallery">
+<div class="card"><img src="https://placehold.co/1280x720/6a11cb/ffffff?text=YOUR+THUMBNAIL" alt="YouTube Thumbnail"><div class="card-content"><h3>YouTube Thumbnail</h3></div></div>
+<div class="card"><img src="https://placehold.co/1280x720/2575fc/ffffff?text=GAMING+THUMBNAIL" alt="Gaming Thumbnail"><div class="card-content"><h3>Gaming Thumbnail</h3></div></div>
+<div class="card"><img src="https://placehold.co/1280x720/e91e63/ffffff?text=MUSIC+THUMBNAIL" alt="Music Thumbnail"><div class="card-content"><h3>Music Thumbnail</h3></div></div>
+<div class="card"><img src="https://placehold.co/1280x720/ff9800/ffffff?text=TELUGU+THUMBNAIL" alt="Telugu Thumbnail"><div class="card-content"><h3>Telugu Thumbnail</h3></div></div>
+</div>
+
+<section class="order-section" id="order">
+<h2>📲 Place Your Order</h2>
+<p class="order-description">Fill in the details and send your order directly to WhatsApp.</p>
+<form id="orderForm">
+<label for="customerName">Your Name *</label>
+<input id="customerName" type="text" placeholder="Enter your name" required>
+
+<label for="customerWhatsApp">Your WhatsApp Number *</label>
+<input id="customerWhatsApp" type="tel" placeholder="Enter your WhatsApp number" required>
+
+<label for="thumbnailType">Thumbnail Type *</label>
+<select id="thumbnailType" required>
+<option value="">Select thumbnail type</option>
+<option>YouTube Thumbnail</option><option>Gaming Thumbnail</option><option>Music Thumbnail</option>
+<option>Telugu Thumbnail</option><option>News Thumbnail</option><option>Shorts Thumbnail</option><option>Custom Thumbnail</option>
+</select>
+
+<label for="quantity">Number of Thumbnails *</label>
+<select id="quantity" required>
+<option value="1">1 Thumbnail — ₹50</option><option value="2">2 Thumbnails — ₹100</option>
+<option value="3">3 Thumbnails — ₹150</option><option value="5">5 Thumbnails — ₹250</option><option value="10">10 Thumbnails — ₹500</option>
+</select>
+
+<label for="videoTitle">YouTube Video Title</label>
+<input id="videoTitle" type="text" placeholder="Enter your video title">
+
+<label for="requirements">Design Requirements *</label>
+<textarea id="requirements" placeholder="Tell us what you want in the thumbnail..." required></textarea>
+
+<div class="total" id="totalPrice">Total: ₹50</div>
+<button type="submit" class="whatsapp-btn">💬 Send Order on WhatsApp</button>
+<p class="note">WhatsApp will open with the order details. Press “Send” to send it.</p>
+</form>
+</section>
+
+<section class="services">
+<h2>✨ What We Offer</h2>
+<ul><li>✅ Professional YouTube Thumbnails</li><li>✅ Telugu Video Thumbnails</li><li>✅ Gaming Thumbnails</li><li>✅ Music Thumbnails</li><li>✅ Custom Designs</li><li>✅ Affordable ₹50 Pricing</li></ul>
+</section>
+</main>
+
+<section class="contact">
+<h2>📞 Contact Us</h2><p>WhatsApp: 9989495213</p>
+<a class="contact-btn" href="https://wa.me/919989495213" target="_blank">💬 Chat on WhatsApp</a>
+</section>
+<footer>© 2026 Telugu Thumbnail Shop. All Rights Reserved.</footer>
+
+<script>
+const quantity=document.getElementById("quantity");
+const totalPrice=document.getElementById("totalPrice");
+quantity.addEventListener("change",()=>{totalPrice.textContent="Total: ₹"+(Number(quantity.value)*50)});
+document.getElementById("orderForm").addEventListener("submit",e=>{
+e.preventDefault();
+const name=document.getElementById("customerName").value.trim();
+const customerNumber=document.getElementById("customerWhatsApp").value.trim();
+const type=document.getElementById("thumbnailType").value;
+const qty=Number(quantity.value);
+const title=document.getElementById("videoTitle").value.trim()||"Not provided";
+const requirements=document.getElementById("requirements").value.trim();
+const message=`🎨 NEW THUMBNAIL ORDER
+
+👤 Customer Name: ${name}
+📱 Customer WhatsApp: ${customerNumber}
+🎯 Thumbnail Type: ${type}
+🔢 Quantity: ${qty}
+💰 Total Price: ₹${qty*50}
+🎬 YouTube Video Title: ${title}
+
+📝 Design Requirements:
+${requirements}
+
+Please confirm my order. Thank you!`;
+window.location.href="https://wa.me/919989495213?text="+encodeURIComponent(message);
+});
+</script>
+</body>
+</html>
